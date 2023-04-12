@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas TPA-2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="form_BMI">
+        <h1>CHECK YOUR BMI</h1>
+        <h4>Enter your weight and height below to check your BMI result</h4>
+
+        <div class="bb">
+            <p>Put your weight in here (KG)</p>
+            <input type="number" id="bb" placeholder="0">
+        </div>
+
+        <div class="tb">
+            <p>And your height in here (CM)</p>
+            <input type="number" id="tb" placeholder="0">
+        </div>
+        <button type="submit" id="submit">Calculate BMI</button>
+
+        <p>Your BMI is <span id="total-bmi">0</span> which means You are <span id="BMI-Category"></span></p>
+        
+        <br>
+        <p style="font-weight: 500;">BMI Categories</p>
+        <ol>
+            
+            <li>Underweight =  < 18,5 </li>
+            <li>Normal weight = 18.5 - 24.9</li>
+            <li>Overweight = 25 - 29.9</li>
+            <li>Obesity = BMI of 30 or greater</li>
+        </ol>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
